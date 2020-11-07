@@ -129,7 +129,7 @@ while(quit);
                   case 3: // withdraw money   
                  System.out.println("Withdrawing money from account ");                   
                      System.out.print("Enter your account Number : ");
-                      tmp=Gilbert.nextInt();
+                      tmp=input.nextInt();
                       
                           if(tmp==generated_number){
                               if(option==1) {
@@ -137,11 +137,11 @@ while(quit);
                                       System.out.print("Sorry! You cannot withdraw book balance");
                                   } else{
                                       System.out.print("Enter Amount Of Money to withdraw : ");
-                                      withd=Gilbert.nextDouble();
+                                      withd=input.nextDouble();
                                       
                                       if(withd>user.Acc_Balance){
                                           System.out.print("Enter Valid Amount of Money : ");
-                                          withd=Gilbert.nextDouble();
+                                          withd=input.nextDouble();
                                       }
                                       else {
                                           current_balance= user.withdraw(withd);
